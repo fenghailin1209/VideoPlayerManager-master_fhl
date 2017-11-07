@@ -1,6 +1,8 @@
 package com.example.gsyvideoplayer.holder;
 
+import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -8,6 +10,7 @@ import android.widget.ImageView;
 import com.example.gsyvideoplayer.R;
 import com.example.gsyvideoplayer.listener.SampleListener;
 import com.example.gsyvideoplayer.model.VideoModel;
+import com.example.gsyvideoplayer.utils.JumpUtils;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
 import com.shuyu.gsyvideoplayer.builder.GSYVideoOptionBuilder;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
@@ -21,7 +24,7 @@ import butterknife.ButterKnife;
 
 public class RecyclerItemNormalHolder extends RecyclerItemBaseHolder {
 
-    public final static String TAG = "RecyclerView2List";
+    public final static String TAG = RecyclerItemNormalHolder.class.getSimpleName();
 
     protected Context context = null;
 
@@ -40,13 +43,24 @@ public class RecyclerItemNormalHolder extends RecyclerItemBaseHolder {
         gsyVideoOptionBuilder = new GSYVideoOptionBuilder();
     }
 
-    public void autoPlay(){
-        if(gsyVideoPlayer != null){
+    public void autoPlay() {
+        if (gsyVideoPlayer != null) {
             gsyVideoPlayer.startPlayLogic();
         }
     }
 
     public void onBind(final int position, VideoModel videoModel) {
+        //fhl add 20171107
+        gsyVideoPlayer.setIsCanTouchChangeView(false);
+        gsyVideoPlayer.setPrepareFinishIsShowStartButton(false);
+        gsyVideoPlayer.setIsShowBottomContainer(false);
+        gsyVideoPlayer.setOnVideoClickListener(new StandardGSYVideoPlayer.OnVideoClickListener() {
+            @Override
+            public void OnVideoClick() {
+                //支持旋转全屏的详情模式
+                JumpUtils.goToDetailPlayer((Activity) context);
+            }
+        });
 
         //增加封面
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -80,10 +94,12 @@ public class RecyclerItemNormalHolder extends RecyclerItemBaseHolder {
                 .setShowFullAnimation(true)
                 .setNeedLockFull(true)
                 .setPlayPosition(position)
+                .setSeekOnStart(10)
                 .setStandardVideoAllCallBack(new SampleListener() {
                     @Override
                     public void onPrepared(String url, Object... objects) {
                         super.onPrepared(url, objects);
+                        Log.i(TAG, "--->>>!gsyVideoPlayer.isIfCurrentIsFullscreen(): " + !gsyVideoPlayer.isIfCurrentIsFullscreen());
                         if (!gsyVideoPlayer.isIfCurrentIsFullscreen()) {
                             //静音
                             GSYVideoManager.instance().setNeedMute(true);
@@ -94,6 +110,7 @@ public class RecyclerItemNormalHolder extends RecyclerItemBaseHolder {
                     @Override
                     public void onQuitFullscreen(String url, Object... objects) {
                         super.onQuitFullscreen(url, objects);
+                        Log.i(TAG, "--->>>onQuitFullscreen");
                         //全屏不静音
                         GSYVideoManager.instance().setNeedMute(true);
                     }
@@ -101,10 +118,11 @@ public class RecyclerItemNormalHolder extends RecyclerItemBaseHolder {
                     @Override
                     public void onEnterFullscreen(String url, Object... objects) {
                         super.onEnterFullscreen(url, objects);
+                        Log.i(TAG, "--->>>onEnterFullscreen");
                         GSYVideoManager.instance().setNeedMute(false);
                     }
                 }).build(gsyVideoPlayer);
-
+        Log.i(TAG, "--->>>build");
 
         //增加title
         gsyVideoPlayer.getTitleTextView().setVisibility(View.GONE);

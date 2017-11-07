@@ -4,22 +4,29 @@ package com.example.gsyvideoplayer;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.Explode;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
+import android.widget.Toast;
 
 import com.example.gsyvideoplayer.adapter.RecyclerBaseAdapter;
 import com.example.gsyvideoplayer.adapter.RecyclerNormalAdapter;
-
 import com.example.gsyvideoplayer.holder.RecyclerItemNormalHolder;
 import com.example.gsyvideoplayer.model.VideoModel;
 import com.shuyu.gsyvideoplayer.GSYVideoManager;
-import com.shuyu.gsyvideoplayer.video.base.GSYVideoPlayer;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
+import com.shuyu.gsyvideoplayer.video.base.GSYVideoPlayer;
+import com.volokh.danylo.videolist.visibility_demo.adapter.items.VisibilityItem;
+import com.volokh.danylo.visibility_utils.calculator.DefaultSingleItemCalculatorCallback;
+import com.volokh.danylo.visibility_utils.calculator.ListItemsVisibilityCalculator;
+import com.volokh.danylo.visibility_utils.calculator.SingleListViewItemActiveCalculator;
+import com.volokh.danylo.visibility_utils.scroll_utils.ItemsPositionGetter;
+import com.volokh.danylo.visibility_utils.scroll_utils.RecyclerViewItemPositionGetter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,20 +34,32 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RecyclerViewActivity extends AppCompatActivity {
+public class RecyclerViewActivity extends AppCompatActivity implements VisibilityItem.ItemCallback {
 
 
     private static final String TAG = RecyclerViewActivity.class.getSimpleName();
     @BindView(R.id.list_item_recycler)
     RecyclerView videoList;
 
-    LinearLayoutManager linearLayoutManager;
+    LinearLayoutManager mLayoutManager;
 
     RecyclerBaseAdapter recyclerBaseAdapter;
 
     List<VideoModel> dataList = new ArrayList<>();
 
     boolean mFull = false;
+
+
+    //=========================== start =======================
+    private final ListItemsVisibilityCalculator mListItemVisibilityCalculator =
+            new SingleListViewItemActiveCalculator(new DefaultSingleItemCalculatorCallback(), dataList);
+
+    private ItemsPositionGetter mItemsPositionGetter;
+
+    private int mScrollState;
+    private Toast mToast;
+    //=========================== end =======================
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +76,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         resolveData();
 
         final RecyclerNormalAdapter recyclerNormalAdapter = new RecyclerNormalAdapter(this, dataList);
-        linearLayoutManager = new LinearLayoutManager(this);
-        videoList.setLayoutManager(linearLayoutManager);
+        mLayoutManager = new LinearLayoutManager(this);
+        videoList.setLayoutManager(mLayoutManager);
         videoList.setAdapter(recyclerNormalAdapter);
 
         videoList.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -66,15 +85,33 @@ public class RecyclerViewActivity extends AppCompatActivity {
             int firstVisibleItem, lastVisibleItem;
 
             @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
+            public void onScrollStateChanged(RecyclerView recyclerView, int scrollState) {
+                super.onScrollStateChanged(recyclerView, scrollState);
+                //item可见播放
+                mScrollState = scrollState;
+                if(scrollState == RecyclerView.SCROLL_STATE_IDLE && !dataList.isEmpty()){
+                    mListItemVisibilityCalculator.onScrollStateIdle(
+                            mItemsPositionGetter,
+                            mLayoutManager.findFirstVisibleItemPosition(),
+                            mLayoutManager.findLastVisibleItemPosition());
+                }
             }
 
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                firstVisibleItem   = linearLayoutManager.findFirstVisibleItemPosition();
-                lastVisibleItem = linearLayoutManager.findLastVisibleItemPosition();
+                //item可见播放
+                if(!dataList.isEmpty()){
+                    mListItemVisibilityCalculator.onScroll(
+                            mItemsPositionGetter,
+                            mLayoutManager.findFirstVisibleItemPosition(),
+                            mLayoutManager.findLastVisibleItemPosition() - mLayoutManager.findFirstVisibleItemPosition() + 1,
+                            mScrollState);
+                }
+
+
+                firstVisibleItem   = mLayoutManager.findFirstVisibleItemPosition();
+                lastVisibleItem = mLayoutManager.findLastVisibleItemPosition();
                 //大于0说明有播放
                 if (GSYVideoManager.instance().getPlayPosition() >= 0) {
                     //当前播放的位置
@@ -96,6 +133,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
             }
         });
 
+        mItemsPositionGetter = new RecyclerViewItemPositionGetter(mLayoutManager, videoList);
     }
 
     @Override
@@ -127,6 +165,22 @@ public class RecyclerViewActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        //item可见播放
+        if(!dataList.isEmpty()){
+            // need to call this method from list view handler in order to have filled list
+            videoList.post(new Runnable() {
+                @Override
+                public void run() {
+
+                    mListItemVisibilityCalculator.onScrollStateIdle(
+                            mItemsPositionGetter,
+                            mLayoutManager.findFirstVisibleItemPosition(),
+                            mLayoutManager.findLastVisibleItemPosition());
+
+                }
+            });
+        }
+
         GSYVideoManager.onResume();
     }
 
@@ -139,11 +193,24 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
     private void resolveData() {
         for (int i = 0; i < 19; i++) {
-            VideoModel videoModel = new VideoModel();
+            VideoModel videoModel = new VideoModel(this);
             dataList.add(videoModel);
         }
         if (recyclerBaseAdapter != null)
             recyclerBaseAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    public void makeToast(String text) {
+        if(mToast != null){
+            mToast.cancel();
+            mToast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+            mToast.show();
+        }
+    }
+
+    @Override
+    public void onActiveViewChangedActive(View newActiveView, int newActiveViewPosition) {
+//        mVisibilityUtilsCallback.setTitle("Active view at position " + newActiveViewPosition);
+    }
 }

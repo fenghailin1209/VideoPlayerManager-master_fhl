@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-  <com.example.gsyvideoplayer.video.SampleCoverVideo
+
+  <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
       android:id="@+id/video_item_player"
       android:layout_width="match_parent"
       android:layout_height="@dimen/post_media_height"/>

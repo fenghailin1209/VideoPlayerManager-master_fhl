@@ -40,7 +40,9 @@ public class RecyclerNormalAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
         RecyclerItemNormalHolder recyclerItemViewHolder = (RecyclerItemNormalHolder) holder;
         recyclerItemViewHolder.setRecyclerBaseAdapter(this);
-        recyclerItemViewHolder.onBind(position, itemDataList.get(position));
+        VideoModel videoModel = itemDataList.get(position);
+        recyclerItemViewHolder.onBind(position, videoModel);
+        videoModel.onBindViewHolder(recyclerItemViewHolder);
     }
 
     @Override

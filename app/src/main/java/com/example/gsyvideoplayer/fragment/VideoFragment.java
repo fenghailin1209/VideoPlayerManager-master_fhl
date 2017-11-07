@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,27 +74,6 @@ public class VideoFragment extends Fragment {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                Log.i(TAG, "--->>>onScrollStateChanged firstVisibleItem:" + firstVisibleItem + ",lastVisibleItem:" + lastVisibleItem);
-                int playVideoPosition = getAutoPlayPosition();
-                if (playVideoPosition >= firstVisibleItem && playVideoPosition < lastVisibleItem) {
-                    //TODO:videoList.getChildAt 得到的是界面上显示的position
-                    View view = videoList.getChildAt(playVideoPosition);
-                    if (null != videoList.getChildViewHolder(view)) {
-                        RecyclerItemNormalHolder viewHolder = (RecyclerItemNormalHolder) videoList.getChildViewHolder(view);
-                        viewHolder.autoPlay();
-                        Log.i(TAG, "--->>>autoPlay");
-                    }
-                }
-            }
-
-            private int getAutoPlayPosition() {
-                for (int position = firstVisibleItem; position < lastVisibleItem; position++) {
-                    boolean isAutoPlay = dataList.get(position).isAutoPlay();
-                    if (isAutoPlay) {
-                        return position;
-                    }
-                }
-                return -1;
             }
 
             @Override

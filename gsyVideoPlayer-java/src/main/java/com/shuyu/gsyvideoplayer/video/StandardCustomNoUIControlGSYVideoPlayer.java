@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,9 +36,8 @@ import moe.codeest.enviews.ENPlayView;
  * Created by shuyu on 2016/11/11.
  */
 
-public class StandardGSYVideoPlayer extends GSYVideoPlayer {
+public class StandardCustomNoUIControlGSYVideoPlayer extends GSYVideoPlayer {
 
-    private static final String TAG = StandardGSYVideoPlayer.class.getSimpleName();
     protected StandardVideoAllCallBack mStandardVideoAllCallBack;
 
     //亮度dialog
@@ -86,15 +84,15 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
     /**
      * 1.5.0开始加入，如果需要不同布局区分功能，需要重载
      */
-    public StandardGSYVideoPlayer(Context context, Boolean fullFlag) {
+    public StandardCustomNoUIControlGSYVideoPlayer(Context context, Boolean fullFlag) {
         super(context, fullFlag);
     }
 
-    public StandardGSYVideoPlayer(Context context) {
+    public StandardCustomNoUIControlGSYVideoPlayer(Context context) {
         super(context);
     }
 
-    public StandardGSYVideoPlayer(Context context, AttributeSet attrs) {
+    public StandardCustomNoUIControlGSYVideoPlayer(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -119,11 +117,6 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
 
     }
 
-    @Override
-    protected void touchDoubleUp() {
-
-    }
-
     /**
      * 继承后重写可替换为你需要的布局
      *
@@ -141,7 +134,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
     public void startPlayLogic() {
         if (mStandardVideoAllCallBack != null) {
             Debuger.printfLog("onClickStartThumb");
-            mStandardVideoAllCallBack.onClickStartThumb(mOriginUrl, mTitle, StandardGSYVideoPlayer.this);
+            mStandardVideoAllCallBack.onClickStartThumb(mOriginUrl, mTitle, StandardCustomNoUIControlGSYVideoPlayer.this);
         }
         prepareVideo();
         startDismissControlViewTimer();
@@ -330,7 +323,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
     public GSYBaseVideoPlayer startWindowFullscreen(Context context, boolean actionBar, boolean statusBar) {
         GSYBaseVideoPlayer gsyBaseVideoPlayer = super.startWindowFullscreen(context, actionBar, statusBar);
         if (gsyBaseVideoPlayer != null) {
-            StandardGSYVideoPlayer gsyVideoPlayer = (StandardGSYVideoPlayer) gsyBaseVideoPlayer;
+            StandardCustomNoUIControlGSYVideoPlayer gsyVideoPlayer = (StandardCustomNoUIControlGSYVideoPlayer) gsyBaseVideoPlayer;
             gsyVideoPlayer.setStandardVideoAllCallBack(mStandardVideoAllCallBack);
             gsyVideoPlayer.setLockClickListener(mLockClickListener);
             gsyVideoPlayer.setNeedLockFull(isNeedLockFull());
@@ -342,29 +335,11 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
 
     /********************************各类UI的状态显示*********************************************/
 
-
-    private OnVideoClickListener onVideoClickListener;
-
-    public interface OnVideoClickListener {
-        public void OnVideoClick();
-    }
-
-    /**
-     * 设置视频点击回调
-     *
-     * @param onVideoClickListener
-     */
-    public void setOnVideoClickListener(OnVideoClickListener onVideoClickListener) {
-        this.onVideoClickListener = onVideoClickListener;
-    }
-
-
     /**
      * 点击触摸显示和隐藏逻辑
      */
     @Override
     protected void onClickUiToggle() {
-        Log.i(TAG, "--->>>onClickUiToggle mCurrentState:" + mCurrentState);
         if (mIfCurrentIsFullscreen && mLockCurScreen && mNeedLockFull) {
             setViewShowState(mLockScreen, VISIBLE);
             return;
@@ -378,19 +353,12 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
                 }
             }
         } else if (mCurrentState == CURRENT_STATE_PLAYING) {
-            //加了一个参数控制
-            if (isCanTouchChangeView) {
-                if (mBottomContainer != null) {
-                    if (mBottomContainer.getVisibility() == View.VISIBLE) {
-                        changeUiToPlayingClear();
-                    } else {
-                        changeUiToPlayingShow();
-                    }
+            if (mBottomContainer != null) {
+                if (mBottomContainer.getVisibility() == View.VISIBLE) {
+                    changeUiToPlayingClear();
+                } else {
+                    changeUiToPlayingShow();
                 }
-            }
-
-            if (onVideoClickListener != null) {
-                onVideoClickListener.OnVideoClick();
             }
         } else if (mCurrentState == CURRENT_STATE_PAUSE) {
             if (mBottomContainer != null) {
@@ -451,7 +419,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
         Debuger.printfLog("changeUiToPreparingShow");
 
         setViewShowState(mTopContainer, VISIBLE);
-        setBottomContainerViewShow();
+        setViewShowState(mBottomContainer, VISIBLE);
         setViewShowState(mStartButton, INVISIBLE);
         setViewShowState(mLoadingProgressBar, VISIBLE);
         setViewShowState(mThumbImageViewLayout, INVISIBLE);
@@ -471,10 +439,8 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
         Debuger.printfLog("changeUiToPlayingShow");
 
         setViewShowState(mTopContainer, VISIBLE);
-        setBottomContainerViewShow();
-        if (prepareFinishIsShowStartButton) {
-            setViewShowState(mStartButton, VISIBLE);
-        }
+        setViewShowState(mBottomContainer, VISIBLE);
+        setViewShowState(mStartButton, VISIBLE);
         setViewShowState(mLoadingProgressBar, INVISIBLE);
         setViewShowState(mThumbImageViewLayout, INVISIBLE);
         setViewShowState(mBottomProgressBar, INVISIBLE);
@@ -491,7 +457,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
         Debuger.printfLog("changeUiToPauseShow");
 
         setViewShowState(mTopContainer, VISIBLE);
-        setBottomContainerViewShow();
+        setViewShowState(mBottomContainer, VISIBLE);
         setViewShowState(mStartButton, VISIBLE);
         setViewShowState(mLoadingProgressBar, INVISIBLE);
         setViewShowState(mThumbImageViewLayout, INVISIBLE);
@@ -510,7 +476,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
         Debuger.printfLog("changeUiToPlayingBufferingShow");
 
         setViewShowState(mTopContainer, VISIBLE);
-        setBottomContainerViewShow();
+        setViewShowState(mBottomContainer, VISIBLE);
         setViewShowState(mStartButton, INVISIBLE);
         setViewShowState(mLoadingProgressBar, VISIBLE);
         setViewShowState(mThumbImageViewLayout, INVISIBLE);
@@ -530,7 +496,7 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
         Debuger.printfLog("changeUiToCompleteShow");
 
         setViewShowState(mTopContainer, VISIBLE);
-        setBottomContainerViewShow();
+        setViewShowState(mBottomContainer, VISIBLE);
         setViewShowState(mStartButton, VISIBLE);
         setViewShowState(mLoadingProgressBar, INVISIBLE);
         setViewShowState(mThumbImageViewLayout, VISIBLE);
@@ -673,27 +639,27 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
     /**
      * 全屏的UI逻辑
      */
-    private void initFullUI(StandardGSYVideoPlayer standardGSYVideoPlayer) {
+    private void initFullUI(StandardCustomNoUIControlGSYVideoPlayer mStandardCustomNoUIControlGSYVideoPlayer) {
 
         if (mBottomProgressDrawable != null) {
-            standardGSYVideoPlayer.setBottomProgressBarDrawable(mBottomProgressDrawable);
+            mStandardCustomNoUIControlGSYVideoPlayer.setBottomProgressBarDrawable(mBottomProgressDrawable);
         }
 
         if (mBottomShowProgressDrawable != null && mBottomShowProgressThumbDrawable != null) {
-            standardGSYVideoPlayer.setBottomShowProgressBarDrawable(mBottomShowProgressDrawable,
+            mStandardCustomNoUIControlGSYVideoPlayer.setBottomShowProgressBarDrawable(mBottomShowProgressDrawable,
                     mBottomShowProgressThumbDrawable);
         }
 
         if (mVolumeProgressDrawable != null) {
-            standardGSYVideoPlayer.setDialogVolumeProgressBar(mVolumeProgressDrawable);
+            mStandardCustomNoUIControlGSYVideoPlayer.setDialogVolumeProgressBar(mVolumeProgressDrawable);
         }
 
         if (mDialogProgressBarDrawable != null) {
-            standardGSYVideoPlayer.setDialogProgressBar(mDialogProgressBarDrawable);
+            mStandardCustomNoUIControlGSYVideoPlayer.setDialogProgressBar(mDialogProgressBarDrawable);
         }
 
         if (mDialogProgressHighLightColor >= 0 && mDialogProgressNormalColor >= 0) {
-            standardGSYVideoPlayer.setDialogProgressColor(mDialogProgressHighLightColor, mDialogProgressNormalColor);
+            mStandardCustomNoUIControlGSYVideoPlayer.setDialogProgressColor(mDialogProgressHighLightColor, mDialogProgressNormalColor);
         }
     }
 
@@ -785,39 +751,6 @@ public class StandardGSYVideoPlayer extends GSYVideoPlayer {
             getCurrentPlayer().getRenderProxy().saveFrame(file, high, gsyVideoShotSaveListener);
         }
     }
-
-    //====================== fhl add start ==============================
-    private boolean isCanTouchChangeView = true;
-    private boolean prepareFinishIsShowStartButton = true;
-    private boolean isShowBottomContainer = true;
-
-    /**
-     * 是否能通过点击事件改变界面
-     */
-    public void setIsCanTouchChangeView(boolean isCanTouchChangeView) {
-        this.isCanTouchChangeView = isCanTouchChangeView;
-    }
-
-    /**
-     * 设置准备视频完成后是否显示播放视频按钮
-     */
-    public void setPrepareFinishIsShowStartButton(boolean prepareFinishIsShowStartButton) {
-        this.prepareFinishIsShowStartButton = prepareFinishIsShowStartButton;
-    }
-
-    /**
-     * 设置是否显示底部菜单view
-     */
-    public void setIsShowBottomContainer(boolean isShowBottomContainer) {
-        this.isShowBottomContainer = isShowBottomContainer;
-    }
-
-    private void setBottomContainerViewShow() {
-        if (isShowBottomContainer) {
-            setViewShowState(mBottomContainer, VISIBLE);
-        }
-    }
-    //====================== fhl add end ==============================
 
 
 }
