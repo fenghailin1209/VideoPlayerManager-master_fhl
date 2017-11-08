@@ -2,6 +2,7 @@ package com.example.gsyvideoplayer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,6 +16,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.open_btn)
     Button openBtn;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick({R.id.open_btn, R.id.list_btn, R.id.list_btn_2, R.id.list_detail, R.id.clear_cache, R.id.recycler, R.id.recycler_2, R.id.list_detail_list, R.id.web_detail, R.id.danmaku_video, R.id.fragment_video, R.id.more_type, R.id.input_type, R.id.open_btn_empty, R.id.open_control, R.id.open_filter, R.id.open_btn_pick})
     public void onClick(View view) {
+        Log.i(TAG,"--->>>id:"+view.getId());
         switch (view.getId()) {
             case R.id.open_btn:
                 //直接一个页面播放的

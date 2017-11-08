@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
+import android.util.Log;
 import android.view.View;
 
 import com.example.gsyvideoplayer.DanmkuVideoActivity;
@@ -41,11 +42,13 @@ public class JumpUtils {
         Intent intent = new Intent(activity, PlayActivity.class);
         intent.putExtra(PlayActivity.TRANSITION, true);
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            Log.i("","--->>>1");
             Pair pair = new Pair<>(view, PlayActivity.IMG_TRANSITION);
             ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
                     activity, pair);
             ActivityCompat.startActivity(activity, intent, activityOptions.toBundle());
         } else {
+            Log.i("","--->>>1");
             activity.startActivity(intent);
             activity.overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
         }

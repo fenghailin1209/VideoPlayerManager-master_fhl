@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b78782248e6b57f670f3a98f52f615dcd010161b">
+        <dex dex="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_22e17739f32f6111271eff3c34cde18bd1be131e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0f5f7fe7bd85e47b452a7748d1d6749032e969d6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayer-java-lib\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f756dc60ae2654f2a251d7b22d16d96160bb8a97">
+        <dex dex="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\build\intermediates\pre-dexed\debug\classes_ac13f35a3ddfd0dd47344699d556b32628a3beed.jar" />
+    </item>
+
+</items>

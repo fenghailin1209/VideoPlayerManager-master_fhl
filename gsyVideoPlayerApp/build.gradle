@@ -42,4 +42,7 @@ dependencies {
     compile project(':gsyVideoPlayer-java-lib')
     compile "com.shuyu:gsyVideoPlayer-armv7a:2.1.1"
     compile 'com.jakewharton:butterknife:8.2.1'
+//    compile "com.jakewharton:butterknife-compiler:8.2.1"
+
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
 }
