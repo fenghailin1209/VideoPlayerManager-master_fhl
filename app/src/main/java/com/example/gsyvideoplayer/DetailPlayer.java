@@ -20,13 +20,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
+/**
+ * 详情界面
+ */
 public class DetailPlayer extends AppCompatActivity {
 
     @BindView(R.id.post_detail_nested_scroll)
     NestedScrollView postDetailNestedScroll;
-
-    //推荐使用StandardGSYVideoPlayer，功能一致
-    //CustomGSYVideoPlayer部分功能处于试验阶段
     @BindView(R.id.detail_player)
     StandardGSYVideoPlayer detailPlayer;
 
@@ -43,9 +43,6 @@ public class DetailPlayer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_player);
         ButterKnife.bind(this);
-
-        //断网自动重新链接，url前接上ijkhttphook:
-        //String url = "ijkhttphook:http://baobab.wdjcdn.com/14564977406580.mp4";
 
         String url = "http://baobab.wdjcdn.com/14564977406580.mp4";
 
@@ -77,8 +74,6 @@ public class DetailPlayer extends AppCompatActivity {
         ImageView imageView = new ImageView(this);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setImageResource(R.mipmap.xxx1);
-
-        //detailPlayer.setThumbImageView(imageView);
 
         resolveNormalVideoUI();
 
@@ -193,7 +188,6 @@ public class DetailPlayer extends AppCompatActivity {
         if (isPlay) {
             getCurPlay().release();
         }
-        //GSYPreViewManager.instance().releaseMediaPlayer();
         if (orientationUtils != null)
             orientationUtils.releaseListener();
     }

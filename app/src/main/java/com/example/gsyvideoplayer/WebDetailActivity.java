@@ -63,9 +63,9 @@ public class WebDetailActivity extends GSYBaseActivityDetail {
         settings.setJavaScriptEnabled(true);
         webView.loadUrl("https://www.baidu.com");
 
-        webTopLayout.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-            @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+//        webTopLayout.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+//            @Override
+//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
 //                if (!webPlayer.isIfCurrentIsFullscreen() && scrollY >= 0 && isPlay) {
 //                    if (scrollY > webPlayer.getHeight()) {
 //                        //如果是小窗口就不需要处理
@@ -90,8 +90,8 @@ public class WebDetailActivity extends GSYBaseActivityDetail {
 //                    }
 //                    webTopLayoutVideo.setTranslationY((scrollY <= webTopLayoutVideo.getHeight()) ? -scrollY : -webTopLayoutVideo.getHeight());
 //                }
-            }
-        });
+//            }
+//        });
 
     }
 
