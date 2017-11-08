@@ -54,22 +54,136 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MainActivity" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7088c2c-1972-4998-88e2-39f3b0b23a01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/loading_progress.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/message_tip_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/share_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/share_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/unlock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_backward_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_brightness_6_white_36dp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_enlarge.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_error_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_error_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_forward_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_loading_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_pause_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_pause_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_play_normal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_play_pressed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_shrink.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_small_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable-xhdpi/video_volume_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/GSYBaseActivityDetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/GSYPreViewManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/GSYVideoManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/builder/GSYVideoOptionBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/GSYMediaPlayerListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/GSYVideoGifSaveListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/GSYVideoShotListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/GSYVideoShotSaveListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/LockClickListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/StandardVideoAllCallBack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/listener/VideoAllCallBack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/model/GSYModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/model/GSYVideoModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/model/VideoOptionModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/GSYRenderView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/AutoFixEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/BarrelBlurEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/BlackAndWhiteEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/BrightnessEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/ContrastEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/CrossProcessEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/DocumentaryEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/DuotoneEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/FillLightEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GammaEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GaussianBlurEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GrainEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GreyScaleEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/HueEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/InvertColorsEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/LamoishEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/NoEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/OverlayEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/PosterizeEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/SampleBlurEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/SaturationEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/SepiaEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/SharpnessEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/TemperatureEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/TintEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/VignetteEffect.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewBaseRender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewSimpleRender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYSurfaceView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYTextureView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYVideoGLView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/AnimatedGifEncoder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/CommonUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/Debuger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/FileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/GSYVideoType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/GifCreateHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/ListVideoUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/MeasureHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/NetInfoModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/NetworkUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/OrientationUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/StorageUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/CustomGSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/ListGSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/NormalGSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardCustomNoUIControlGSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardGSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYBaseVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYTextureRenderView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoControlView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/view/SmallVideoTouch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENDownloadView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENPlayView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/empty_drawable.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_click_error_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_click_pause_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_click_play_selector.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_dialog_progress.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_dialog_progress_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_loading.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_progress.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_seek_progress.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_seek_thumb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_seek_thumb_normal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_seek_thumb_pressed.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_title_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/drawable/video_volume_progress_bg.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_brightness.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_layout_custom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_layout_normal.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_layout_standard.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_progress_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/video_volume_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/attrs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle" afterPath="$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/MainActivity.java" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/utils/JumpUtils.java" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/utils/JumpUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/gsyVideoPlayerApp.iml" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/gsyVideoPlayerApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/styles.xml" />
     </list>
     <ignored path="GSYVideoPlayer-master.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,64 +215,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+            <state relative-caret-position="531">
+              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.2.1/81f36b5249a820a1d53a87052631a6db626984f3/butterknife-8.2.1-sources.jar!/butterknife/internal/Utils.java">
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JumpUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/utils/JumpUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="21">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -3799,7 +3870,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master" value="6040425671163" />
+        <entry key="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master" value="6040431293235" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -6247,15 +6318,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/list-visibility-utils/build/intermediates/res/merged/debug/values-v23/values-v23.xml" />
-        <option value="$PROJECT_DIR$/dependencies.gradle" />
-        <option value="$PROJECT_DIR$/list-visibility-utils/build.gradle" />
-        <option value="$PROJECT_DIR$/gsyVideoPlayer/src/main/java/items/ListItemData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/volokh/danylo/videolist/visibility_demo/adapter/items/Holder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gsyvideoplayer/fragment/VideoFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gsyvideoplayer/model/VideoModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/volokh/danylo/videolist/visibility_demo/adapter/items/VisibilityItem.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gsyvideoplayer/RecyclerViewActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gsyvideoplayer/adapter/RecyclerNormalAdapter.java" />
@@ -6281,11 +6343,32 @@
         <option value="$PROJECT_DIR$/gsyVideoPlayer-java/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gsyvideoplayer/WebDetailActivity.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle" />
         <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/utils/JumpUtils.java" />
         <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/MainActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/dimens.xml" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/video/CustomGSYVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/builder/GSYVideoOptionBuilder.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewSimpleRender.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYTextureView.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/ListVideoUtil.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/view/SmallVideoTouch.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle" />
         <option value="$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardGSYVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/CustomGSYVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/NormalGSYVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardCustomNoUIControlGSYVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYBaseVideoPlayer.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoControlView.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoView.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENDownloadView.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENPlayView.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/holder/RecyclerItemNormalHolder.java" />
+        <option value="$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/builder/GSYVideoOptionBuilder.java" />
       </list>
     </option>
   </component>
@@ -6302,7 +6385,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -6344,6 +6427,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GSYVideoPlayer-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GSYVideoPlayer-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gsyVideoPlayerApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -6357,16 +6454,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shuyu.gsyvideoplayer.builder" />
+      <recent name="com.shuyu.gsyvideoplayer.view" />
+      <recent name="com.shuyu.gsyvideoplayer.render" />
+      <recent name="com.example.gsyvideoplayer.builder" />
       <recent name="com.shuyu.gsyvideoplayer.lib" />
-      <recent name="com.shuyu.gsyvideoplayer.video" />
-      <recent name="com.volokh.danylo.videolist.visibility_demo.adapter.items" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\app\src\main\java\com\volokh\danylo\visibility_utils\calculator" />
-      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\app\src\main\java" />
-      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayer\src\main\java\com\volokh\danylo\visibility_utils\utils" />
-      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayer\src\main\java\com\volokh\danylo\visibility_utils\scroll_utils" />
-      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayer\src\main\java\com\volokh\danylo\visibility_utils\items" />
+      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\src\main\java\moe\codeest\enviews" />
+      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\src\main\java\com\shuyu\gsyvideoplayer\video\base" />
+      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\src\main\java\com\shuyu\gsyvideoplayer\video" />
+      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\src\main\java\com\shuyu\gsyvideoplayer\utils" />
+      <recent name="E:\fenghailin\Example\GSYVideoPlayer-master\GSYVideoPlayer-master\gsyVideoPlayerApp\src\main\java\com\shuyu\gsyvideoplayer\render\view" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.gsyVideoPlayerApp">
@@ -6654,7 +6753,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24860336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -6662,14 +6761,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61087865" sideWeight="0.508596" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5656425" sideWeight="0.491404" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22765364" sideWeight="0.491404" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16480447" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33094555" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41475645" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19692737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -6685,7 +6785,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -6736,224 +6835,402 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/video/StandardGSYVideoPlayer.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GaussianBlurEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/VignetteEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/NoEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/GreyScaleEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/CrossProcessEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/TemperatureEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/SampleBlurEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/effect/BarrelBlurEffect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewBaseRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewBaseRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/glrender/GSYVideoGLViewSimpleRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYVideoGLView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/render/view/GSYTextureView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/utils/AnimatedGifEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26460">
+          <caret line="1272" column="1" selection-start-line="984" selection-start-column="0" selection-end-line="1272" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/utils/Debuger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/GifCreateHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/MeasureHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/NetInfoModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/Debuger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/OrientationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/NetworkUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/StorageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/GSYVideoType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/utils/ListVideoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/video/CustomGSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/ListGSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYTextureRenderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="43" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYTextureRenderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/view/SmallVideoTouch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/view/SmallVideoTouch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/moe/codeest/enviews/ENDownloadView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/GSYPreViewManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/mipmap-xxhdpi/xxx1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/DetailPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="190" column="37" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-armv7a/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calculator/SingleListViewItemActiveCalculator.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calculator/DefaultSingleItemCalculatorCallback.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calculator/ListItemsVisibilityCalculator.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/calculator/BaseItemsVisibilityCalculator.java" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/utils/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer/bintray.gradle" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer/src/main/res/values/strings.xml" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer/src/main/AndroidManifest.xml" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer/build.gradle" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/src/main/java/com/shuyu/gsyvideoplayer/utils/CommonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="110" column="58" selection-start-line="110" selection-start-column="58" selection-end-line="110" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/adapter/DanamakuAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/videolist/visibility_demo/adapter/items/VisibilityItem.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/items/ListItemData.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/CustomGSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/NormalGSYVideoPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/calculator/DefaultSingleItemCalculatorCallback.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardCustomNoUIControlGSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/StandardGSYVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYBaseVideoPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoControlView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/video/base/GSYVideoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENDownloadView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/moe/codeest/enviews/ENPlayView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/builder/GSYVideoOptionBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="42" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/calculator/BaseItemsVisibilityCalculator.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/builder/GSYVideoOptionBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/calculator/SingleListViewItemActiveCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/calculator/ListItemsVisibilityCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/scroll_utils/ScrollDirectionDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/lib/CarGuo.java" />
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/shuyu/gsyvideoplayer/lib/CarGuo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/holder/RecyclerItemNormalHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/items/ListItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/video/SampleCoverVideo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/scroll_utils/ItemsPositionGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/scroll_utils/RecyclerViewItemPositionGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/volokh/danylo/visibility_utils/scroll_utils/ListViewItemPositionGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.2.1/1732fe91b89df867470ad7158da4fc52f1aa0165/butterknife-annotations-8.2.1-sources.jar!/butterknife/BindView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/install/Android_Studio_Android_SDK/Android/sdk/sources/android-22/android/widget/RelativeLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#76719#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#8882#8883#0" expanded="false" />
-            <element signature="e#8917#8918#0" expanded="false" />
-            <element signature="e#8983#8984#0" expanded="false" />
-            <element signature="e#9022#9023#0" expanded="false" />
-            <element signature="e#10275#10276#0" expanded="false" />
-            <element signature="e#10303#10304#0" expanded="false" />
-            <element signature="e#10796#10797#0" expanded="false" />
-            <element signature="e#10835#10836#0" expanded="false" />
-            <element signature="e#11106#11107#0" expanded="false" />
-            <element signature="e#11137#11138#0" expanded="false" />
-            <element signature="e#57046#57047#0" expanded="false" />
-            <element signature="e#57081#57082#0" expanded="false" />
-            <element signature="e#57192#57193#0" expanded="false" />
-            <element signature="e#57229#57230#0" expanded="false" />
-            <element signature="e#57346#57347#0" expanded="false" />
-            <element signature="e#57383#57384#0" expanded="false" />
-            <element signature="e#68912#68913#0" expanded="false" />
-            <element signature="e#68949#68950#0" expanded="false" />
-            <element signature="e#69523#69529#0" expanded="false" />
-            <element signature="e#69728#69734#0" expanded="false" />
-            <element signature="e#69914#69920#0" expanded="false" />
-            <element signature="e#75597#75620#0" expanded="false" />
-            <element signature="e#75778#75784#0" expanded="false" />
-            <element signature="e#76165#76171#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/install/Android_Studio_Android_SDK/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1-sources.jar!/android/support/v4/widget/NestedScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/WebDetailActivity.java">
+    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="531">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -6962,132 +7239,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bintray.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayer-java-lib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/activity_play.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/PlayActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/utils/JumpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.2.1/81f36b5249a820a1d53a87052631a6db626984f3/butterknife-8.2.1-sources.jar!/butterknife/ButterKnife.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="123" column="25" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/src/main/java/com/example/gsyvideoplayer/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.2.1/81f36b5249a820a1d53a87052631a6db626984f3/butterknife-8.2.1-sources.jar!/butterknife/internal/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/build/generated/source/apt/debug/com/example/gsyvideoplayer/DanmkuVideoActivity_ViewBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gsyVideoPlayerApp/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
           <folding />
         </state>
       </provider>
